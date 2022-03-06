@@ -54,10 +54,9 @@ body .container-vertical section .header {
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   body .container-vertical section .header {
-    top: 40%;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 

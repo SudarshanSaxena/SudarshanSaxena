@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (event) {
+  // ViewPort();
   // array with texts to type in typewriter
   var dataText = ["Developer.", "Cinephile.", "Fitness Enthusiast.", "Sudarshan Saxena"];
 
@@ -40,3 +41,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
   // start the text animation
   StartTextAnimation(0);
 });
+
+function ViewPort() {
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+  var viewsize = w + "," + h;
+  alert("Your View Port Size is:" + viewsize);
+}
