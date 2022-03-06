@@ -2,13 +2,15 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-size: 10px;
+  //font-size: 1.6rem;
+  font-family: "Open Sans";
 }
 
 body {
   width: 100vw;
   height: 100vh;
   margin: 0rem;
+  //font-size: 10px;
 
   .container-vertical {
     width: 100%;
@@ -17,9 +19,10 @@ body {
     overflow-y: scroll;
 
     section {
+      position: relative;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      // justify-content: center;
+      // align-items: center;
       width: 100vw;
       height: 100vh;
       scroll-snap-align: start;
@@ -37,6 +40,21 @@ body {
       &:nth-of-type(3) {
         background-color: rgb(48, 48, 48);
       }
+
+      .header {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        font-style: italic;
+        font-family: "Open Sans";
+
+        @media screen and (max-width: 400px) {
+          top: 40%;
+          font-size: 0.7rem;
+        }
+      }
     }
   }
 
@@ -50,12 +68,12 @@ body {
     section {
       display: flex;
       flex: none;
-      justify-content: center;
-      align-items: center;
-      width: calc(100vw-10rem);
+      // justify-content: center;
+      // align-items: center;
+      width: 100vw;
       height: 100vh;
       scroll-snap-align: start;
-      scroll-margin-left: 10rem;
+      // scroll-margin-left: 10rem;
 
       color: white;
 
@@ -71,5 +89,20 @@ body {
         background-color: rgb(48, 48, 48);
       }
     }
+  }
+}
+
+.tags {
+  color: red;
+}
+
+#typewriter {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
   }
 }

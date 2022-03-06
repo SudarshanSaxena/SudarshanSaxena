@@ -3,7 +3,7 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-size: 10px;
+  font-family: "Open Sans";
 }
 
 body {
@@ -21,15 +21,10 @@ body .container-vertical {
 }
 
 body .container-vertical section {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
@@ -46,6 +41,24 @@ body .container-vertical section:nth-of-type(2) {
 
 body .container-vertical section:nth-of-type(3) {
   background-color: #303030;
+}
+
+body .container-vertical section .header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 400px) {
+  body .container-vertical section .header {
+    top: 40%;
+    font-size: 0.7rem;
+  }
 }
 
 body .container-horizontal {
@@ -66,16 +79,9 @@ body .container-horizontal section {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: calc(100vw-10rem);
+  width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
-  scroll-margin-left: 10rem;
   color: white;
 }
 
@@ -89,5 +95,27 @@ body .container-horizontal section:nth-of-type(2) {
 
 body .container-horizontal section:nth-of-type(3) {
   background-color: #303030;
+}
+
+.tags {
+  color: red;
+}
+
+#typewriter {
+  border-right: 0.05em solid;
+  -webkit-animation: caret 1s steps(1) infinite;
+          animation: caret 1s steps(1) infinite;
+}
+
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
