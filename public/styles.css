@@ -60,7 +60,7 @@ body .container-vertical section .header {
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   body .container-vertical section .header {
     font-size: 1rem;
   }
