@@ -6,12 +6,6 @@
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 500px) {
-  .header {
-    font-size: 0.1rem;
-  }
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -59,7 +53,9 @@ body {
 
       @media screen and (max-width: 600px) {
         .header {
+          width: 100vw;
           font-size: 1rem;
+          left: 66%;
         }
       }
 
@@ -174,5 +170,32 @@ body {
 @keyframes caret {
   50% {
     border-color: transparent;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.skill-set {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.skills {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 10rem;
   }
 }

@@ -6,12 +6,6 @@
   font-family: "Open Sans";
 }
 
-@media screen and (max-width: 500px) {
-  .header {
-    font-size: 0.1rem;
-  }
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -62,7 +56,9 @@ body .container-vertical section .header {
 
 @media screen and (max-width: 600px) {
   body .container-vertical section .header {
+    width: 100vw;
     font-size: 1rem;
+    left: 66%;
   }
 }
 
@@ -177,5 +173,39 @@ body .container-horizontal section:nth-of-type(3) {
   50% {
     border-color: transparent;
   }
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.skill-set {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.skills {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.images img {
+  height: 10rem;
 }
 /*# sourceMappingURL=styles.css.map */
