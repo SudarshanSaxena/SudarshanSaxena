@@ -3,209 +3,53 @@
           box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Open Sans";
 }
 
 body {
-  width: 100vw;
+  background: black;
   height: 100vh;
-  margin: 0rem;
-}
-
-body .container-vertical {
-  width: 100%;
-  height: 100%;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
-body .container-vertical section {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  color: white;
-}
-
-body .container-vertical section:nth-of-type(1) {
-  background-color: #1c1c1c;
-}
-
-body .container-vertical section:nth-of-type(2) {
-  background-color: #262626;
-}
-
-body .container-vertical section:nth-of-type(3) {
-  background-color: #303030;
-}
-
-body .container-vertical section .header {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 2rem;
-  font-style: italic;
-  font-family: "Open Sans";
-}
-
-@media screen and (max-width: 600px) {
-  body .container-vertical section .header {
-    width: 100vw;
-    font-size: 1rem;
-    left: 66%;
-  }
-}
-
-body .container-vertical section .icon-scroll,
-body .container-vertical section .icon-scroll:before {
-  position: absolute;
-  left: 50%;
-  top: 80%;
-}
-
-body .container-vertical section .icon-scroll {
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  margin-top: -35px;
-  -webkit-box-shadow: inset 0 0 0 1px #fff;
-          box-shadow: inset 0 0 0 1px #fff;
-  border-radius: 25px;
-}
-
-body .container-vertical section .icon-scroll:before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
-  }
-}
-
-body .container-horizontal {
-  width: 100%;
-  height: 100%;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .container-horizontal section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  color: white;
-}
-
-body .container-horizontal section:nth-of-type(1) {
-  background-color: #1c1c1c;
-}
-
-body .container-horizontal section:nth-of-type(2) {
-  background-color: #262626;
-}
-
-body .container-horizontal section:nth-of-type(3) {
-  background-color: #303030;
-}
-
-.tags {
-  color: red;
-}
-
-#typewriter {
-  border-right: 0.05em solid;
-  -webkit-animation: caret 1s steps(1) infinite;
-          animation: caret 1s steps(1) infinite;
-}
-
-@-webkit-keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
 }
 
 .title {
-  position: absolute;
-  top: 15%;
-  left: 10%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.skill-set {
-  position: absolute;
-  top: 25%;
-  left: 10%;
+.tags {
+  color: #ff1717;
+}
+
+.slash {
+  color: #34f134;
+}
+
+.skills img {
+  height: 10rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-}
-
-.images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.images img {
-  height: 10rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 /*# sourceMappingURL=styles.css.map */
