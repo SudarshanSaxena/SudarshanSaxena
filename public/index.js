@@ -1,3 +1,10 @@
+let locusnine = document.querySelector('#locusnine');
+let l9Modal = document.querySelector('#l9Modal')
+
+locusnine.addEventListener('click', () => {
+  l9Modal.style.display = 'block'
+})
+
 document.addEventListener('DOMContentLoaded', function (event) {
   // ViewPort();
   // array with texts to type in typewriter
@@ -48,3 +55,4 @@ function ViewPort() {
   var viewsize = w + "," + h;
   alert("Your View Port Size is:" + viewsize);
 }
+
