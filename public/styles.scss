@@ -3,16 +3,37 @@
   margin: 0px;
   padding: 0px;
   //font-size: 1.6rem;
-  color: white;
+  //color: white;
 }
 
 body {
-  background: black;
+  background: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
 
-.landing {
+.custom-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.custom-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
 }
 
 .title {
@@ -32,14 +53,6 @@ body {
 
 .skills img {
   height: 10rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 // body {
