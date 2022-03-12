@@ -1,91 +1,21 @@
+/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
 }
 
-@font-face {
-  font-family: typewriter;
-  src: url(./assets/fonts/jmh_typewriter/JMHTypewriter-Thin.otf);
-}
-
-body {
-  background: black;
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-.custom-modal {
-  display: none;
-  /* Hidden by default */
+.navbar {
   position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
   width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  background-color: crimson;
+  font-family: "Ubuntu";
 }
 
-.custom-card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 10rem;
-  height: 10rem;
-  background-color: white;
-}
-
-.title {
+.navbar {
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 300;
-  font-family: typewriter;
-}
-
-.tags {
-  color: #ff1717;
-}
-
-.slash {
-  color: #34f134;
-}
-
-.skills img {
-  height: 9rem;
-  -webkit-box-shadow: 2px 3px rgba(243, 57, 57, 0.52);
-          box-shadow: 2px 3px rgba(243, 57, 57, 0.52);
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.landing {
-  width: 100vw;
-  height: 100vh;
-}
-
-.full-screen {
-  height: 100vh;
-  width: 100vw;
 }
 /*# sourceMappingURL=styles.css.map */
