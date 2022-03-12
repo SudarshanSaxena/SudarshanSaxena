@@ -5,6 +5,11 @@
   padding: 0px;
 }
 
+@font-face {
+  font-family: typewriter;
+  src: url(./assets/fonts/jmh_typewriter/JMHTypewriter-Thin.otf);
+}
+
 body {
   background: black;
   height: 100vh;
@@ -54,6 +59,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 300;
+  font-family: typewriter;
 }
 
 .tags {
@@ -65,6 +72,20 @@ body {
 }
 
 .skills img {
-  height: 10rem;
+  height: 9rem;
+  -webkit-box-shadow: 2px 3px rgba(243, 57, 57, 0.52);
+          box-shadow: 2px 3px rgba(243, 57, 57, 0.52);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=styles.css.map */

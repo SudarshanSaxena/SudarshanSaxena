@@ -8,7 +8,7 @@ locusnine.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function (event) {
   // ViewPort();
   // array with texts to type in typewriter
-  var dataText = ["Developer", "Cinephile", "Fitness Enthusiast", "Sudarshan Saxena"];
+  var dataText = ["Cinephile", "Fitness Enthusiast", "Developer"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished
