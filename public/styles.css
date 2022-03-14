@@ -1,120 +1,26 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-}
-
-@font-face {
-  font-family: typewriter;
-  src: url(./assets/fonts/jmh_typewriter/JMHTypewriter-Thin.otf);
-}
-
-body {
-  background: black;
-  height: 100vh;
-  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
-.custom-modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgba(216, 214, 214, 0.4);
-  /* Black w/ opacity */
-  color: white;
-}
-
-@media screen and (max-width: 500px) {
-  .custom-modal {
-    top: 20%;
-    left: 5%;
-    width: 20rem;
-  }
-}
-
-.custom-card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 50rem;
-  height: wrap-content;
-  background-color: black;
-}
-
-.title {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 300;
-  font-family: typewriter;
-  z-index: 1;
-}
-
-.tags {
-  color: #ff1717;
-}
-
-.slash {
-  color: #34f134;
-}
-
-.skills img {
-  height: 9rem;
-  -webkit-box-shadow: 2px 3px 3px 3px rgba(243, 57, 57, 0.52);
-          box-shadow: 2px 3px 3px 3px rgba(243, 57, 57, 0.52);
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.landing {
+.intro {
+  height: 100vh;
   width: 100vw;
-  height: 100vh;
+  background-image: url(./assets/banner.jpg);
+  color: white;
+  background-size: cover;
 }
 
-.full-screen {
-  height: 100vh;
+.skills {
+  height: 50vh;
   width: 100vw;
 }
 
-.card {
-  background-color: black;
-  color: white;
-  height: 24rem;
-  -webkit-box-shadow: 2px 3px 4px 4px rgba(243, 57, 57, 0.52);
-          box-shadow: 2px 3px 4px 4px rgba(243, 57, 57, 0.52);
-}
-
-.card img {
-  padding: 1.2rem;
-}
-
-.client-name a {
-  text-decoration: none;
-  color: red;
-}
-
-#closeL9Btn:hover {
-  cursor: pointer;
+.btn {
+  cursor: default;
+  margin: 10px;
 }
 /*# sourceMappingURL=styles.css.map */

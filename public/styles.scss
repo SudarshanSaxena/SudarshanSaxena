@@ -1,107 +1,24 @@
 * {
-  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  //font-size: 1.6rem;
-  //color: white;
-}
-
-@font-face {
-  font-family: typewriter;
-  src: url(./assets/fonts/jmh_typewriter/JMHTypewriter-Thin.otf);
-}
-
-body {
-  background: rgb(0, 0, 0);
-  height: 100vh;
-  width: 100vw;
+  box-sizing: border-box;
   position: relative;
 }
 
-.custom-modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  // background-color: rgb(221, 221, 221); /* Fallback color */
-  background-color: rgba(216, 214, 214, 0.4); /* Black w/ opacity */
-  color: white;
-
-  @media screen and (max-width: 500px) {
-    top: 20%;
-    left: 5%;
-    width: 20rem;
-  }
-}
-
-.custom-card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 50rem;
-  height: wrap-content;
-  background-color: black;
-}
-
-.title {
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: 300;
-  font-family: typewriter;
-  z-index: 1;
-}
-
-.tags {
-  color: rgb(255, 23, 23);
-}
-
-.slash {
-  color: rgb(52, 241, 52);
-}
-
-.skills img {
-  height: 9rem;
-  box-shadow: 2px 3px 3px 3px rgba(243, 57, 57, 0.52);
-
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.landing {
+.intro {
+  height: 100vh;
   width: 100vw;
-  height: 100vh;
+  background-image: url(./assets/banner.jpg);
+  color: white;
+  background-size: cover;
 }
 
-.full-screen {
-  height: 100vh;
+.skills {
+  height: 50vh;
   width: 100vw;
 }
 
-.card {
-  background-color: black;
-  color: white;
-  height: 24rem;
-  box-shadow: 2px 3px 4px 4px rgba(243, 57, 57, 0.52);
-
-  img {
-    padding: 1.2rem;
-  }
-}
-
-.client-name {
-  a {
-    text-decoration: none;
-    color: red;
-  }
-}
-
-#closeL9Btn:hover {
-  cursor: pointer;
+.btn {
+  cursor: default;
+  margin: 10px;
 }

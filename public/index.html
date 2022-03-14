@@ -14,173 +14,82 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- header section -->
-      <div class="row landing justify-content-center align-items-center">
-        <div class="col-12">
-          <h1 class="title" style="color: rgb(52, 241, 52)">
-            Hello, I am Sudarshan Saxena
-          </h1>
-          <div class="title">
-            <h1>
-              <span class="tags">< </span>
-              <span id="typewriter"></span>
-              <span class="slash">/</span>
-              <span class="tags">></span>
-            </h1>
+    <!-- intro section -->
+    <div class="row intro justify-content-center align-items-center">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="d-flex justify-content-center">
+          <div class="heading">
+            <h1>Hello,</h1>
+            <h2>I'm Sudarshan Saxena</h2>
+            <h4 class="text-muted">Full Stack Developer</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-1 col-sm-1 col-md-6 col-lg-6 col-6"></div>
+    </div>
+
+    <!-- skills section -->
+    <div class="row skills justify-content-center align-items-center">
+      <div class="col-xs-1 col-sm-1 col-md-6 col-lg-6 col-6">
+        <div class="d-flex justify-content-center mb-5 mt-5">
+          <h4>Weapons in my aresenal</h4>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="row justify-content-center">
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >Angular</span
+            >
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >TypeScript</span
+            >
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >JavaScript</span
+            >
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >Node JS</span
+            >
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >Express JS</span
+            >
+            <span class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6"
+              >Mongo DB</span
+            >
+            <span
+              class="btn btn-secondary col-xs-1 col-sm-1 col-md-6 col-lg-6 mb-5"
+              >Firebase</span
+            >
           </div>
         </div>
       </div>
 
-      <!-- skills section -->
-
-      <div class="full-screen">
-        <div class="row skills justify-content-evenly align-content-center">
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/node.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row skills justify-content-evenly align-content-center">
-          <div class="col-6">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/angular.png" alt="" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/ts.png" alt="" />
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/firebase.png" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row skills justify-content-evenly align-content-center">
-          <div class="col-6">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/html.png" alt="" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/css.png" alt="" />
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-center">
-              <img src="./assets/js.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- experience section -->
-      <div class="row full-screen justify-content-evenly align-items-center">
-        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
-          <div class="d-flex justify-content-center">
-            <div class="card" id="locusnine" style="width: 18rem">
-              <img src="./assets/l9-2.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Locusnine Innovations</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Full Stack Developer
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
-          <div class="d-flex justify-content-center">
-            <div class="card" id="tcs" style="width: 18rem">
-              <img src="./assets/tcs.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">TCS</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  Associate System Engineer
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4 col-md-12 col-lg-4">
-          <div class="d-flex justify-content-center">
-            <div class="card" id="sankey" style="width: 18rem">
-              <img src="./assets/sankey.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Sankey Business Solutions</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
-                  React Native Developer - Intern
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- locusnine modal -->
-      <div class="row">
-        <div class="col-12">
-          <div class="custom-modal" id="l9Modal">
-            <div class="card" style="width: 50rem">
-              <div class="card-title">
-                <h1>My Work at Locusnine</h1>
-              </div>
-            </div>
-            <!-- <div class="custom-card">
-              <div class="custom-card-body">
-                <div class="row mt-2">
-                  <h2 class="col-11">
-                    <span class="m-3">
-                      My Work At Locusnine Innovations</h2>
-                    </span>
-                    <h3 id="closeL9Btn" class="col-1">&times;</h3>
-                </div>
-
-                <div class="row">
-                  <div class="col-12 text-muted">
-                    <h6 >August 2021 - Present</h6>
-                    <h6>Full Stack Developer</h6>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <div class="client-name">
-                      <h5><a href="https://www.vertofx.com/">Verto FX</a></h5>
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <ul>
-                      <li>
-                        <p>Cross‑border payment solutions to the fastest‑growing companies</p>
-                      </li>
-                      <li>
-                        <p>Enabling countries like Kenya, Nigeria, South Africa etc. to make and receive payments from all around the world with super ease and minimal settlement duration.</p>
-                      </li>
-                      <li>
-                        <p>Developed Payment Link feature which enables the users to send invoice details via a link and receive payment using the same link.</p>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
-
-              </div>
-            </div> -->
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="d-flex justify-content-center">
+          <div>
+            <h4 class="m-4 mt-5">
+              I've been working as a web developer for more than 3.5 years and
+              have worked on multiple projects.
+            </h4>
+            <h4 class="m-4">
+              I'm a certified Angular Developer and working my way towards
+              becoming a software architect.
+            </h4>
+            <h4 class="m-4">
+              Apart from coding, I'm a ciniphile and I like writing movie
+              reviews.
+            </h4>
+            <h4 class="m-4">
+              I'm a Fintness Enthusiast and I work out regulary.
+            </h4>
           </div>
         </div>
       </div>
     </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
