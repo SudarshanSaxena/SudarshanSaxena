@@ -14,6 +14,13 @@
   background-size: cover;
 }
 
+@media screen and (max-width: 500px) {
+  .intro {
+    background-color: gray;
+    background-image: none;
+  }
+}
+
 .intro img {
   height: 2rem;
 }

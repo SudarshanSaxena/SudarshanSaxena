@@ -12,6 +12,11 @@
   color: white;
   background-size: cover;
 
+  @media screen and (max-width: 500px) {
+    background-color: gray;
+    background-image: none;
+  }
+
   img {
     height: 2rem;
   }
